@@ -39,6 +39,7 @@ for file in "$@"; do
             -preset medium \
             -b:v $video_bitrate \
             -pass 1 \
+            -passlogfile "${TMPDIR:-/tmp}/ffmpeg2pass-$(basename "$file").log" \
             -b:a $audio_bitrate \
             -f "$ext" \
             /dev/null && \
@@ -48,8 +49,11 @@ for file in "$@"; do
             -preset medium \
             -b:v $video_bitrate \
             -pass 2 \
+            -passlogfile "${TMPDIR:-/tmp}/ffmpeg2pass-$(basename "$file").log" \
             -b:a $audio_bitrate \
             "${file%."${ext}"}-${target_size_mb}mb.${ext}"
+        rm "${TMPDIR:-/tmp}/ffmpeg2pass-$(basename "$file").log"
+        rm "${TMPDIR:-/tmp}/ffmpeg2pass-$(basename "$file").log.mbtree"
     elif [[ "$mime" == image/* ]]; then
         magick "$file" \
             -define "webp:extent=$((target_size_mb * 1024))KB" \
