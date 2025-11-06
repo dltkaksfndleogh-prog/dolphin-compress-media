@@ -52,8 +52,8 @@ for file in "$@"; do
             "${file%."${ext}"}-${target_size_mb}mb.${ext}"
     elif [[ "$mime" == image/* ]]; then
         magick "$file" \
-            -define "${ext}:extent=${target_size_mb}" \
-            "${file%."${ext}"}-${target_size_mb}mb.${ext}"
+            -define "webp:extent=$((target_size_mb * 1024))KB" \
+            "${file%."${ext}"}-${target_size_mb}mb.webp"
     else
         kdialog --title "Compress Media" --error "Unsupported file type"
     fi
