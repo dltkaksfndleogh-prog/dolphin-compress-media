@@ -24,6 +24,7 @@ done
 
 target_size_mb="${target_size_mb:-10}" # target size in MB
 for file in "$@"; do
+    file_name="$(basename "$file")"
     mime=$(file -b --mime-type "$file")
     ext="${file##*.}"
     if [[ "$mime" == video/* ]]; then
@@ -57,7 +58,7 @@ Input file must not be more than 8 times bigger than target size."
             -preset medium \
             -b:v $video_bitrate \
             -pass 1 \
-            -passlogfile "${TMPDIR:-/tmp}/ffmpeg2pass-$(basename "$file")" \
+            -passlogfile "${TMPDIR:-/tmp}/ffmpeg2pass-$file_name" \
             -b:a $audio_bitrate \
             -f "$ext" \
             /dev/null && \
@@ -68,7 +69,7 @@ Input file must not be more than 8 times bigger than target size."
             -preset medium \
             -b:v $video_bitrate \
             -pass 2 \
-            -passlogfile "${TMPDIR:-/tmp}/ffmpeg2pass-$(basename "$file")" \
+            -passlogfile "${TMPDIR:-/tmp}/ffmpeg2pass-$file_name" \
             -b:a $audio_bitrate \
             "${file%."${ext}"}-${target_size_mb}mb.${ext}"
     elif [[ "$mime" == image/* ]]; then
